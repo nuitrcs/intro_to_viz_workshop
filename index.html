@@ -18,24 +18,8 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="css/monokai-sublime.css">
 
-		<!-- Google fonts
-			<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
-		 -->
-
-		<!-- Printing and PDF exports
-		<script>
-			/*
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-			*/
-		</script>
-	-->
 		<script>
 			function play() { 
 				function currentvid() {
@@ -269,35 +253,35 @@
 					<p></p>
 				</section>
 				<section>
-					<img src='files/9pie.png' style='width:55%; height:auto'>
+					<img src='files/9pie.PNG' style='width:55%; height:auto'>
 					<h1>This is a monster.</h1>
 					<p>Tell me why. What is wrong with this?</p>
 				</section>
 				<section>
-					<img src='files/10explode.png' style='width:55%; height:auto'>
+					<img src='files/10explode.PNG' style='width:55%; height:auto'>
 					<h1>Which wedge is largest? Smallest?</h1>
 					<p>This is a case of <i>too much dimension</i> for the data.</p>
 				</section>
 				<section>
-					<img src='files/11bar.png' style='width:55%; height:auto'>
+					<img src='files/11bar.PNG' style='width:55%; height:auto'>
 					<h1>Default bar version from excel</h1>
 					<p>What can we improve about this? Use <i>empathy.</i> What is hard?</p>
 				</section>
 				<section>
-					<img src='files/12bar.png' style='width:55%; height:auto'>
+					<img src='files/12bar.PNG' style='width:55%; height:auto'>
 					<h1>Horizontal has more room for text</h1>
 					<p>Text is often a big limitation for the <i>context</i> of your visual.</p>
 				</section>
 				<section>
-					<img src='files/13bar.png' style='width:65%; height:auto'>
+					<img src='files/13bar.PNG' style='width:65%; height:auto'>
 					<h1>Cut axis, bump up font size</h1>
 				</section>
 				<section>
-					<img src='files/14bar.png' style='width:75%; height:auto'>
+					<img src='files/14bar.PNG' style='width:75%; height:auto'>
 					<h1>Sort and use color to emphasize</h1>
 				</section>
 				<section>
-					<img src='files/15compare.png' style='width:85%; height:auto'>
+					<img src='files/15compare.PNG' style='width:85%; height:auto'>
 					<h1>Much better.</h1>
 					<p>Minimize the time your audience takes to understand your <i>purpose.</i></p>
 				</section>
@@ -319,12 +303,12 @@
 					<p><i>Go to the github for the file '3.xlsx' and get to work.</i></p>
 				</section>
 				<section>
-					<img src='files/18congress.png' style='width:75%; height:auto'>
+					<img src='files/18congress.PNG' style='width:75%; height:auto'>
 					<h1>This was my 5 minute attempt</h1>
 					<p><i>I want you to do better with just 10 minutes more.</i></p>
 				</section>
 				<section>
-					<img src='files/19congress.png' style='width:75%; height:auto'>
+					<img src='files/19congress.PNG' style='width:75%; height:auto'>
 					<h1>My slightly improved version</h1>
 					<p></p>
 				</section>
@@ -348,68 +332,24 @@
 
 		</div>
 
-		<!-- REVEAL -->
 		<script src="js/reveal.js"></script>
 
-		<!-- JQUERY 
-			<script src="js/jquery.js"></script>
-		-->
-
-		<!-- UNDERSCORE 
-			<script src="js/underscore.js"></script>
-		-->
-
-		<!-- D3 
-			<script src="js/d3.min.js"></script>
-		-->
-
-		<!-- REVEAL TO D3 
-			<script src="js/reveal-to-d3-config.js"></script>
-			<script src="js/reveal-to-d3.js"></script>
-		-->
-
-		<!-- Some helper functions for the slides 
-			<script src="js/helperFunctions.js"></script>
-			<script src="slides/slide_01/titleSlide.js"></script>
-		-->
-
-		<!-- INIT -->
 		<script>
 			
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				//controls: false,
 				progress: false,
 				history: true,
 				center: true,
-				// The "normal" size of the presentation, aspect ratio will be preserved
-			    // when the presentation is scaled to fit different resolutions. Can be
-			    // specified using percentage units.
 			    width: 1920, //'100%', 
 			    height: 1080, //'100%', 
-			    // Factor of the display size that should remain empty around the content
     			margin: 0,
-				// Bounds for smallest/largest possible scale to apply to content
     			minScale: 0.2,
     			maxScale: 4,
 
-				transition: 'fade', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
+				transition: 'fade', 
 				dependencies: [
-				/*
-					{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/highlight/highlight.js', async: false, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-					*/
 				]
 			});
-
-			//Remove the very heavy title slide (& slightly heavy end slide)
-			//by slides before and after that have no JS scripts running by themselves
 			
 			Reveal.addEventListener( 'slidechanged', function() {
 		    	play()
